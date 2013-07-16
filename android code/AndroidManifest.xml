@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="king.muchbeer.tzmithackathon"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <activity
+            android:name="king.muchbeer.tzmithackathon.DashboardActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- All Product Activity -->
+               <activity
+            android:name="king.muchbeer.tzmithackathon.MainScreenActivity"
+            android:label="Information system" >
+        </activity>
+        <activity
+            android:name="king.muchbeer.tzmithackathon.AllProductsActivity"
+            android:label="Users" >
+        </activity>
+
+        <!-- Add Product Activity -->
+        <activity
+            android:name="king.muchbeer.tzmithackathon.NewProductActivity"
+            android:label="Add User" >
+        </activity>
+
+        <!-- Edit Product Activity -->
+        <activity
+            android:name="king.muchbeer.tzmithackathon.EditProductActivity"
+            android:label="Edit User" >
+        </activity>
+         <!--  Login Activity -->
+        <activity
+            android:label="Login" 
+            android:name="king.muchbeer.tzmithackathon.LoginActivity"></activity>
+
+        <!--  Register Activity -->
+        <activity
+            android:label="Register User" 
+            android:name="king.muchbeer.tzmithackathon.RegisterActivity"></activity>
+      </application>
+
+    <!--  Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
